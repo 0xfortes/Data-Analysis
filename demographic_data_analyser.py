@@ -2,7 +2,7 @@ import pandas as pd
 
 def calculate_demographic_data(print_data=True):
   # Read data from file
-  df = pd.read_csv(r'C:\Users\Fortes\Desktop\Data Analysis with Python\Data_Analysis_Python\adult_data.csv')
+  df = pd.read_csv('Path')
 
   # How many of each race are represented in this dataset? This should be a Pandas series with race names as the index labels.
   race_count = df['race'].value_counts()

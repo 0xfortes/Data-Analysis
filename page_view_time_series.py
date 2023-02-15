@@ -80,8 +80,8 @@ def draw_box_plot():
 
   # Sorts the order of the Months, so they come in order Jan-Dec
 
-  df_box['month_num'] = df_box['date'].dt.month
-  df_box = df_box.sort_values('month_num')
+  df_box['month_order'] = df_box['date'].dt.month
+  df_box = df_box.sort_values('month_order')
 
   # Draw box plots (using Seaborn)
   fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(16, 8))

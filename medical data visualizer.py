@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 # Import data
-df = pd.read_csv('Path')
+df = pd.read_csv('/path')
 
 # Add 'overweight' column
 df['overweight'] = (
@@ -60,7 +60,7 @@ def draw_heat_map():
   mask = np.triu(corr)
 
   # Set up the matplotlib figure
-  fig, ax = plt.subplots(figsize=(12, 12))
+  fig, ax = plt.subplots(figsize=(16, 16))
 
   # Draw the heatmap with 'sns.heatmap()'
   sns.heatmap(corr,
